@@ -1,0 +1,21 @@
+# licensing-service.yml
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaUser:eurekaPassword@localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:licensingDB
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update

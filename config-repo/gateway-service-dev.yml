@@ -1,0 +1,19 @@
+# gateway-service-dev.yml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: licensing-service
+          uri: lb://licensing-service
+          predicates:
+            - Path=/api/license/**
+        - id: organization-service
+          uri: lb://organization-service
+          predicates:
+            - Path=/api/organization/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

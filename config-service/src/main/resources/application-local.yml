@@ -1,0 +1,26 @@
+# config-service/src/main/resources/application-local.yml
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///${user.dir}/..    # Points to the parent directory of config-service
+          search-paths: 
+            - config-repo
+            - config-repo/{application}
+          default-label: main
+  security:
+    user:
+      name: configUser
+      password: configPassword
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
