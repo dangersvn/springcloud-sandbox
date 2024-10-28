@@ -10,7 +10,7 @@ spring:
       server:
         git:
           uri: file:///${user.dir}/..    # Points to the parent directory of config-service
-          search-paths: 
+          search-paths:
             - config-repo
             - config-repo/{application}
           default-label: main
