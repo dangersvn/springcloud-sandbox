@@ -1,11 +1,12 @@
 spring:
   application:
     name: discovery-service
+  profiles:
+    active: prod     # You can set this here as well, though command line will override
   config:
-    import: "optional:configserver:http://localhost:8888"
+    import: "configserver:http://localhost:8888"
   cloud:
     config:
-      uri: http://localhost:8888
       username: configUser
       password: configPassword
       fail-fast: true

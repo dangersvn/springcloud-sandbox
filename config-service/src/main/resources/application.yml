@@ -12,7 +12,7 @@ spring:
           search-paths: 
             - config-repo # config-repository, this is a folder in our git repository
             - config-repo/{application}
-          default-label: main
+          default-label: master
   security:
     user:
       name: configUser
