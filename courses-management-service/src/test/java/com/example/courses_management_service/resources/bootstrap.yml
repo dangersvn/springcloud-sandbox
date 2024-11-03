@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: courses-management-service
+  profiles:
+    active: test     # You can set this here as well, though command line will override
+  cloud:
+    config:
+      enabled: false
