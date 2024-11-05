@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: courses-management-service
-  profiles:
-    active: test     # profile for unit test
-  cloud:
-    config:
-      enabled: false

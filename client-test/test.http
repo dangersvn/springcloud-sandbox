@@ -1,0 +1,14 @@
+### create a course
+POST http://localhost:8001/api/courses
+Content-Type: application/json
+
+{
+    "name": "Docker",
+    "description": "Docker course",
+    "price": 100,
+    "image": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+    "category": "development"
+}
+
+### get courses 
+GET http://localhost:8001/api/courses
