@@ -20,8 +20,8 @@
         <module>config-service</module>
         <module>discovery-service</module>
         <module>courses-management-service</module>
-        <!-- <module>gateway-service</module>
-        <module>licensing-service</module>
+        <module>gateway-service</module>
+        <!-- <module>licensing-service</module>
         <module>organization-service</module> -->
     </modules>
 

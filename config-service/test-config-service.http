@@ -1,0 +1,9 @@
+# curl -u configLocalUser:configLocalPassword http://localhost:8888/service-name/profile
+GET http://localhost:8888/service-name/profile
+Authorization: Basic configLocalUser configLocalPassword
+
+###
+
+### get discovery service configuration for dev environment
+GET http://localhost:8888/discovery-service/prod2
+Authorization: Basic configLocalUser configLocalPassword

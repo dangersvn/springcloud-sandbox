@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gateway-service
+  profiles:
+    active: local     # You can set this here as well, though command line will override
+  config:
+    import: "configserver:http://localhost:8888"
+  cloud:
+    config:
+      username: configLocalUser
+      password: configLocalPassword
+      fail-fast: true
