@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="03-CoursesManagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="courses-management-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.courses_management_service.CoursesManagementServiceApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
