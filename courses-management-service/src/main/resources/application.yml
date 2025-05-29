@@ -5,4 +5,10 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh,health, info # Add refresh here
+#debug: true
+
+logging:
+  level:
+#    root: DEBUG
+    org.springframework.cloud: DEBUG

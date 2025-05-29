@@ -3,10 +3,27 @@ spring:
     name: courses-management-service
   profiles:
     active: local     # You can set this here as well, though command line will override
-  config:
-    import: "configserver:http://localhost:8888"
+#  config:
+#    import: "configserver:http://localhost:8888"
+#  cloud:
+#    config:
+##      uri: http://localhost:8888
+#      discovery:
+#        enabled: true
+#        service-id: config-service
+#      username: configLocalUser
+#      password: configLocalPassword
+#      fail-fast: true # If true, the application will fail to start if it cannot connect to the config server
   cloud:
     config:
-      username: configLocalUser
-      password: configLocalPassword
-      fail-fast: true
+      discovery:
+        enabled: true
+        service-id: config-service
+#      username: configLocalUser
+#      password: configLocalPassword
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaUser:eurekaPassword@localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
