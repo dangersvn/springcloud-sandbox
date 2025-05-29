@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="02-ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="config-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.config.ConfigServiceApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

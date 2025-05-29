@@ -19,8 +19,9 @@ spring:
       discovery:
         enabled: true
         service-id: config-service
-#      username: configLocalUser
-#      password: configLocalPassword
+      username: configUser
+      password: configPassword
+      fail-fast: true # If true, the application will fail to start if it cannot connect to the config server
 eureka:
   client:
     serviceUrl:

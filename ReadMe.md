@@ -4,7 +4,10 @@
 
 mvn spring-boot:run -Dspring-boot.run.profiles=local
 
-
+Start core services order:
+1. Discovery service
+2. Config service
+3. Gateway 
 ----------------------
 That's a solid and ambitious goal — and you’re off to a strong start with the config service already running. Let’s break your goal into manageable progress steps so you're ready to deliver **an impactful 5-day microservices training** next week.
 
